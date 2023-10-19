@@ -1,0 +1,96 @@
+.homeCon{
+   width: 100%;
+   height: 70vh;
+}
+.heading{
+    width: 100%;
+    padding: .8rem;
+   justify-content: space-between; 
+   font-size: 1.4rem;
+   font-weight: 300;
+   background-color: antiquewhite;
+}
+.rightNav{
+    width: 30%; 
+    font-size: 4rem;
+    font-weight: bolder;   
+}
+.leftNav{
+    width: 13%;
+    justify-content: space-between;
+
+}
+
+.leftNav > a{
+    text-decoration: none;
+    color: black;
+}
+
+.mainCon{
+    width: 100%;
+    height: 100%;
+    background-image: url('./4.jpg');    
+    background-position: center;
+    background-size: contain;
+}
+.mainCon > div{
+    width: 100%;
+    height: 100%;    
+    background-color: rgba(8, 10, 1, .870);
+}
+.mainWrapper{
+    /* justify-content: space-around; */
+    color: whitesmoke;
+}
+.text{
+    width: 100%;
+    height: 95%;
+    justify-content: center;
+    
+    text-align: justify;
+}
+.articles{
+    width: 100%;
+    height: 40%;
+    justify-content: space-around;
+}
+.text > button{
+    padding: .9rem;
+    width: 70%;
+    border: none;
+    color: whitesmoke;
+    text-transform: capitalize;
+    background-color: orange;
+    /* margin-top: 4.9rem; */
+}
+
+.footer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+@media (max-width:670px) {
+    .heading{        
+        padding-right: 10rem;       
+       font-size: .9rem;
+       font-weight: 300;  
+       
+    }
+    .leftNav{
+        width: 20%;
+        
+    }
+    .text > button{margin-left: 4rem;
+    }
+    .text{
+        
+        align-items: flex-start;
+    }
+    .articles{
+        margin-left: 4rem;
+        align-items: flex-start;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
