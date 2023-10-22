@@ -1,15 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
+const active = {
+    fontWeight: 'bold',
+    color : 'rgb(57, 20, 20)',
+    // textDecoration: 'underline'
+}
  const Header = () => {
   return (
     <header className='heading flexCenter'>
             <aside className='rightNav'>
-                #vanlife
+            <NavLink to='/'> #vanlife </NavLink> 
             </aside>
             <nav className='leftNav flexCenter'>
-                <Link to='/about'>About</Link>
-                <Link to='/'>Home</Link>
+                <NavLink to='/about' style={({isActive}) => isActive ? active : null}>About</NavLink>
+                <NavLink to='/host' style={({isActive}) => isActive ? active : null}>Host</NavLink>
+                <NavLink to='/van'>Vans</NavLink>
             </nav>
         </header>
   )

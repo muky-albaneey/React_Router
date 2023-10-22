@@ -1,17 +1,18 @@
 import React from 'react'
 import Header from './Header'
 import './about.css';
+import r1 from '../assets/r1.png'
 // import {r1} from '../assets/r1.png'
 export const About = () => {
   return (
     <section className='aboutWrapper flexColStart secondaryColor'>
       <div className="secOne">
-        <img src='./4.jpg' alt="" />
+        <img src={r1} alt="" />
       </div>
       <div className="secTwo flexColStart">
         <h2>
           Don't squeeze  in a sedan when<br />
-          You could relax in vain 🧛‍♀️ 
+          You could relax in van 🧛‍♀️ 
         </h2>
         <span>
           Lorem ipsum dolor sit amet consectetur  provident fugit non quisquam commodi necessitatibus hic accusantium, illo cum corporis 
